@@ -984,26 +984,26 @@ function doubleValues(arr) {
 //  * The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 //  */
 
-// function vowel_count(str1) {
-//   var vowel_list = "aeiouAEIOU";
+function vowel_count(str1) {
+  var vowel_list = "aeiouAEIOU";
 
-//   var object = {};
+  var object = {};
 
-//   for (var i = 0; i < str1.length; i++) {
-//     if (vowel_list.indexOf(str1[i]) !== -1) {
+  for (var i = 0; i < str1.length; i++) {
+    if (vowel_list.indexOf(str1[i]) !== -1) {
 
        
-//         if(object[str1[i]]== undefined) 
-//         {object[str1[i]] = 1} 
-// else{ object[str1[i]] ++};
+        if(object[str1[i]]== undefined) 
+        {object[str1[i]] = 1} 
+else{ object[str1[i]] ++};
      
 
-//     }
-//   }
+    }
+  }
 
-//  return object;
+ return object;
 
-//   }
+  }
 
 // console.log("vowel_count", vowel_count("I Am awesome and so are you"));
 

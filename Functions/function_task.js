@@ -10,18 +10,25 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 => "You will be a software engineer in Jordan, and married to Alice with 3 kids."
 */
 
-
-
-
-     function tellFortune(jobtitle ,geographiclocation ,partnersname,numberofchildren){
-
-        return 'You will be a '+ jobtitle + ' in ' + geographiclocation +' and married to '+ partnersname + 
-        '  with '+ numberofchildren +' kids.' ;
-      }
-      console.log(tellFortune('software engineer', 'Jordan', 'Alice', 3));
-
-
-
+function tellFortune(
+  jobtitle,
+  geographiclocation,
+  partnersname,
+  numberofchildren
+) {
+  return (
+    "You will be a " +
+    jobtitle +
+    " in " +
+    geographiclocation +
+    " and married to " +
+    partnersname +
+    "  with " +
+    numberofchildren +
+    " kids."
+  );
+}
+console.log(tellFortune("software engineer", "Jordan", "Alice", 3));
 
 // /*
 // 2
@@ -36,22 +43,11 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // => "Your doggie is 7 years old in dog years!"
 // */
 
-
-
-
-
-//       function calculateDogAge(age){
-//         age = age * 7;
-//         return 'Your doggie is ' + age +' years old in dog years!';
-//       }
-//       console.log(calculateDogAge(3));
-
-
-
-
-
-
-
+function calculateDogAge(age) {
+  age = age * 7;
+  return "Your doggie is " + age + " years old in dog years!";
+}
+console.log(calculateDogAge(3));
 
 // /*
 // 3
@@ -65,18 +61,15 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // => 'You will need 76650 cups of tea to last you until the ripe old age of 100;
 // */
 
+function calculateSupply(age, amountPerday) {
+  let rest = 100 - age;
+  let amount = rest * amountPerday * 365;
+  console.log(
+    `You will need ${amount} cups of tea to last you until the ripe old age of 100`
+  );
+}
 
-
-//    function calculateSupply(age,amountPerday){
-//   let rest=100-age;
-//   let amount=rest*amountPerday*365;
-//     console.log(`You will need ${amount} cups of tea to last you until the ripe old age of 100`);
-//    }
-
-//    calculateSupply(30, 3);
-
-
-
+calculateSupply(30, 3);
 
 // /*
 // 4
@@ -88,22 +81,11 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // => "Hello Adam"
 // */
 
+function greet(name) {
+  return "Hello " + name;
+}
 
-
-
-// function greet  (name ) {
-//     return 'Hello ' + name ; 
-// }
- 
-// console.log (greet ("Adam ")) ; 
-
-
-
-
-
-
-
-
+console.log(greet("Adam "));
 
 // // 5
 // // what is the error:
@@ -112,7 +94,6 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // // }
 
 // X is undefined
-
 
 // // function double(7) {
 // //   return 2 * 7;
@@ -124,13 +105,11 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // //   return 2 * 'x';
 // // }
 
-//  argument must be variable, and we cant multiply string 
-
-
+//  argument must be variable, and we cant multiply string
 
 // // fix these functions:
 // // func double1(x {
-// //   return 2 * x ;                             
+// //   return 2 * x ;
 // // }
 // functiondouble2 x)
 // return 2 * x;
@@ -140,17 +119,15 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // // */
 
 // function double1(x) {
-//   return 2 * x ;                             
+//   return 2 * x ;
 // }
 
-// // function double2(x){ 
+// // function double2(x){
 // // return 2 * x;
 // // }
 
 //  function double3(x) {
 // return 2 * x;}
-
-
 
 // // 7
 // // Write a function called cube that:
@@ -160,25 +137,17 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // // => 64
 // // */
 
+function cube(num) {
+  return num * num * num;
+}
+console.log(cube(2));
 
+function multiply(x, y) {
+  return x * y;
+}
 
-// function cube(num){
-//   return num*num*num
-// }
-// console.log (cube (2))
-
-
-// function multiply(x, y) {
-//   return x * y;
-// }
-
-// console.log(multiply(3,4));
-// console.log(multiply(5,4));
-
-
-
-
-
+console.log(multiply(3, 4));
+console.log(multiply(5, 4));
 
 // /*
 // 9
@@ -198,29 +167,16 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
 // */
 
+function canIGetADriving(age) {
+  if (age >= 20) {
+    return "yes you can";
+  } else {
+    return "please come back after X years to get one ";
+  }
+}
 
-
-// function canIGetADriving(age) {
-    
-// if (age>=20) {
-// return 'yes you can' ; 
-// }
-// else {
-//     return 'please come back after X years to get one ' ; 
-// }
-    
-// }
-
-// console.log (canIGetADriving(25)) ;
-// console.log (canIGetADriving(10)) ;
-
-
-
-
-
-
-
-
+console.log(canIGetADriving(25));
+console.log(canIGetADriving(10));
 
 // /*
 // 10
@@ -237,26 +193,15 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // => false
 // */
 
-
-
-// function sameLength ( L1 , L2){
-//   if(L1.length == L2.length){
-//     return 'true';
-//   }else{
-//     return 'false';
-//   }
- 
-// }
-// console.log(sameLength("tree","clue"));
-// console.log(sameLength("tree","car"));
-
-
-
-
-
-
-
-
+function sameLength(L1, L2) {
+  if (L1.length == L2.length) {
+    return "true";
+  } else {
+    return "false";
+  }
+}
+console.log(sameLength("tree", "clue"));
+console.log(sameLength("tree", "car"));
 
 // /*
 // 11
@@ -271,28 +216,16 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // => 5
 // */
 
+function largerNubmer(firstNumber, secondNumber) {
+  if (firstNumber > secondNumber) {
+    return firstNumber;
+  } else {
+    return secondNumber;
+  }
+}
 
-// function largerNubmer(firstNumber , secondNumber) {
-// if (firstNumber > secondNumber) {
-//     return firstNumber ; 
-// }
-// else {
-//     return secondNumber ;
-// }
-// }
-
-// console.log (largerNubmer(5,6)) ; 
-// console.log (largerNubmer(5,3)) ; 
-
-
-
-
-
-
-
-
-
-
+console.log(largerNubmer(5, 6));
+console.log(largerNubmer(5, 3));
 
 // /*
 // 12
@@ -313,26 +246,18 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // => 3
 
 // */
-// function smallerNubmer (num1, num2 , num3) {
-//     if (num1<num2 && num1 < num3) {
-//         return num1 ;
-//             }
-//             else if (num2 <num1 && num2 < num3) {
-//                return num2  ; 
-//             }
-//             else {
-//                 return num3 ;
-//             }
-    
-// }
+function smallerNubmer(num1, num2, num3) {
+  if (num1 < num2 && num1 < num3) {
+    return num1;
+  } else if (num2 < num1 && num2 < num3) {
+    return num2;
+  } else {
+    return num3;
+  }
+}
 
-// console.log (smallerNubmer (4,6,3)) ; 
-// console.log (smallerNubmer (8,6,7)) ; 
-
-
-
-
-
+console.log(smallerNubmer(4, 6, 3));
+console.log(smallerNubmer(8, 6, 7));
 
 // /*
 // 13
@@ -360,21 +285,11 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
 // */
 
-
 // function shorterString(string1, string2, string3, string4, string5) {
 //   let strings = [string1, string2, string3, string4, string5];
 //   return console.log(strings.sort((a, b) => a.length - b.length)[0]);
 // }
 // shorterString("byy", "tr", "td", "car", "air", "github");
-
-
-
-
-
-
-
-
-
 
 // /*
 // 14
@@ -391,8 +306,6 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // try all the cases (change the order of the longestString)
 // */
 
-
-
 // function shorterString(str1,str2,str3,str4,str5){
 //   let arr=[str1,str2,str3,str4,str5];
 //   let minStr="";
@@ -402,13 +315,6 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 //   return minStr;
 // }
 // console.log(shorterString("air","tr","by","car","github"));
-
-
-
-
-
-
-
 
 // /*
 // 15
@@ -426,25 +332,17 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
 // function isEven (num) {
 //     if (num % 2 == 0 ) {
-//         return true ; 
-        
+//         return true ;
+
 //     }
 // else {
-//     return false ; 
+//     return false ;
 // }
 
-    
 // }
 
 // console.log (isEven(4)) ;
 // console.log (isEven(1)) ;
-
-
-
-
-
-
-
 
 // /*
 // 16
@@ -463,22 +361,15 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // function isOdd (num) {
 //     if (num % 2 == 0 ) {
 //         return false ;
-        
+
 //     }
 //     else {
 //         return true ;
 //     }
-    
+
 // }
 // console.log (isOdd(5)) ;
 // console.log (isOdd(4)) ;
-
-
-
-
-
-
-
 
 // /*
 // 17
@@ -498,13 +389,6 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // }
 // console.log(positive(-5));
 
-
-    
-   
-
-
-
-
 // /*
 // 18
 // Write a function called fullName
@@ -517,8 +401,6 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // Ex: fullName("Alex", "Mercer")
 // => "Alex Mercer"
 // */
-
-
 
 // function fullName (firstName , lastName) {
 //     return firstName + " " +  lastName ;
@@ -542,19 +424,16 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
 // */
 
-
 // function average(a,b,c,d,e){
 
 //     var sum = a + b + c + d + e ;
 
 //     var avg = sum / 5 ;
 
-//     return avg ; 
+//     return avg ;
 // }
 // console.log(average(1,2,3,4,5));
 // console.log(average(5,7,9,3,5));
-
-
 
 // /*
 // 20
@@ -569,18 +448,12 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // Ex: randomNumber()
 // => 0.475
 
-
-
-
 // */
-
 
 // function randomNumber(){
 //   return  Math.random() ;
 // }
 // console.log(randomNumber());
-
-
 
 // /*
 // 21
@@ -597,18 +470,10 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
 // */
 
-
-
-
 // function randomBetweenNumbers( x,y){
 //   return Math.random() * (y - x) + x;
 // }
 // console.log(randomBetweenNumbers(1,8));
-
-
-
-
-
 
 // /*
 // 22
@@ -631,7 +496,6 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 // => "C"
 // */
 
-
 // function scoreInUniversty(a){
 //     if( a>95 && a<100){
 //       result = "A";
@@ -646,8 +510,6 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 //     }
 //     return result;
 // }
-
-
 
 let mark = 80;
 switch (true) {
@@ -672,7 +534,6 @@ switch (true) {
     console.log("F");
     break;
 }
-
 
 // console.log(scoreInUniversty(96));
 
@@ -732,7 +593,6 @@ switch (true) {
 // Ex: counter()
 // => 1
 // */
-
 
 // function resetCounter(){
 //   console.log(`${num} and the counter reset now `);
